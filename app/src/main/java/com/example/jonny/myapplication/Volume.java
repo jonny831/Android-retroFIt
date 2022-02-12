@@ -3,7 +3,10 @@ package com.example.jonny.myapplication;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Volume {
+//
+//    public VolumeInfo getVolumeInfo() {
+//    }
+
     public class Volume {
         @SerializedName("kind")
         @Expose
@@ -45,4 +48,4 @@ public class Volume {
             return volumeInfo;
         }
     }
-}
+

@@ -1,6 +1,6 @@
 package com.example.jonny.myapplication;
 
-package com.learntodroid.mvvmrestapi.viewmodels;
+
 
 import android.app.Application;
 
@@ -26,10 +26,7 @@ public class BookSearchViewModel extends AndroidViewModel {
         volumesResponseLiveData = bookRepository.getVolumesResponseLiveData();
     }
 
-    public void searchVolumes(String keyword, String author) {
-        Dotenv dotenv = Dotenv.configure().directory("/assets").filename("env").load();
-        bookRepository.searchVolumes(keyword, author, dotenv.get("GOOGLE_API_KEY"));
-    }
+
 
     public LiveData<VolumesResponse> getVolumesResponseLiveData() {
         return volumesResponseLiveData;
